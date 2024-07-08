@@ -30,11 +30,11 @@ bash
 
 conda install numpy
 
-Basic Usage
+## Basic Usage
 
 Here are some basic examples to get you started with NumPy.
 
-Creating Arrays
+## Creating Arrays
 
 You can create NumPy arrays using the numpy.array function:
 
@@ -48,13 +48,13 @@ print(array_1d)
 # Create a 2D array
 array_2d = np.array([[1, 2, 3], [4, 5, 6]])
 print(array_2d)
+```
 
-Array Operations
+## Array Operations
 
 NumPy allows you to perform element-wise operations on arrays:
 
-python
-
+```python
 # Element-wise addition
 array_sum = array_1d + 2
 print(array_sum)
@@ -62,12 +62,13 @@ print(array_sum)
 # Element-wise multiplication
 array_product = array_1d * 2
 print(array_product)
+```
 
-Indexing and Slicing
+## Indexing and Slicing
 
 You can access elements of a NumPy array using indexing and slicing:
 
-python
+```python
 
 # Indexing
 first_element = array_1d[0]
@@ -76,12 +77,13 @@ print(first_element)
 # Slicing
 subset_array = array_1d[1:4]
 print(subset_array)
+```
 
-Common Functions
+## Common Functions
 
 NumPy provides many useful functions for mathematical operations:
 
-python
+```python
 
 # Mean of an array
 mean_value = np.mean(array_1d)
@@ -94,6 +96,7 @@ print(std_deviation)
 # Sum of all elements in an array
 sum_of_elements = np.sum(array_1d)
 print(sum_of_elements)
+```
 
 
 
