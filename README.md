@@ -21,7 +21,7 @@ NumPy is the fundamental package for scientific computing in Python. It provides
 
 To install NumPy, you need to have Python installed on your system. You can install NumPy using pip:
 
-```bash
+bash
 pip install numpy
 
 Alternatively, if you are using Anaconda, you can install NumPy using conda:
@@ -95,12 +95,5 @@ print(std_deviation)
 sum_of_elements = np.sum(array_1d)
 print(sum_of_elements)
 
-~~~python
-import numpy as np
-
-# Create a 1D array
-array_1d = np.array([1, 2, 3, 4, 5])
-print(array_1d)
-~~~
 
 
