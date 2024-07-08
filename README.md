@@ -35,7 +35,7 @@ conda install numpy
 Basic Usage
 
 Here are some basic examples to get you started with NumPy.
-Creating Arrays
+## Creating Arrays
 
 You can create NumPy arrays using the numpy.array function:
 
