@@ -1,5 +1,3 @@
-
-
 # NumPy Basics Project
 
 Welcome to the NumPy Basics Project! This project is designed to help you get started with NumPy, a powerful numerical computing library in Python.
@@ -35,9 +33,7 @@ conda install numpy
 Basic Usage
 
 Here are some basic examples to get you started with NumPy.
-
-
-## Creating Arrays
+Creating Arrays
 
 You can create NumPy arrays using the numpy.array function:
 
