@@ -38,8 +38,7 @@ Creating Arrays
 
 You can create NumPy arrays using the numpy.array function:
 
-python
-
+```python
 import numpy as np
 
 # Create a 1D array
@@ -96,9 +95,4 @@ print(std_deviation)
 sum_of_elements = np.sum(array_1d)
 print(sum_of_elements)
 
-## Header
 
-This is a paragraph.
-
-```python
-print("This is a code block")
