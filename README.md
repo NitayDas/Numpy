@@ -33,6 +33,7 @@ conda install numpy
 Basic Usage
 
 Here are some basic examples to get you started with NumPy.
+
 Creating Arrays
 
 You can create NumPy arrays using the numpy.array function:
@@ -94,3 +95,10 @@ print(std_deviation)
 # Sum of all elements in an array
 sum_of_elements = np.sum(array_1d)
 print(sum_of_elements)
+
+## Header
+
+This is a paragraph.
+
+```python
+print("This is a code block")
