@@ -48,6 +48,73 @@ print(array_1d)
 # Create a 2D array
 array_2d = np.array([[1, 2, 3], [4, 5, 6]])
 print(array_2d)
+
+# creating a array using arrange
+
+arr = np.arrange(10)
+print(arr)
+
+[0,1,2,3,4,5,6,7,8,9]
+
+#bool array
+
+arr = np.ones(5,dtype=bool)
+print(arr)
+
+[ True  True  True  True  True]
+
+#one_Array
+
+import numpy as np
+oneArray = np.ones([4,3])
+oneArray
+
+array([[1., 1., 1.],
+       [1., 1., 1.],
+       [1., 1., 1.],
+       [1., 1., 1.]])
+
+# Eye array
+
+import numpy as np
+EyeArray = np.eye(3)
+EyeArray
+
+array([[1., 0., 0.],
+       [0., 1., 0.],
+       [0., 0., 1.]])
+
+#set_diagonal element using diag function
+
+import numpy as np
+arr2= np.diag([3,6,7])
+print(arr2)
+print("\n")
+print(np.diag(arr2))
+
+[[3 0 0]
+ [0 6 0]
+ [0 0 7]]
+
+[3 6 7]
+
+#random number generate with max,min,and total values
+
+import numpy as np
+arr = np.random.randint(3,9,6)
+arr
+array([3, 8, 4, 6, 5, 8])
+
+#random number generate between 0 and 1
+
+import numpy as np
+random_array = np.random.rand(2,3)
+print(random_array)
+
+array([[0.4543757 , 0.89930504, 0.38307286],
+       [0.9099233 , 0.9006465 , 0.00388887]])
+
+
 ```
 
 ## Array Operations
