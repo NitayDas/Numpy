@@ -220,8 +220,43 @@ print(resize_array)
  [4 6 4 3]]
 
 
+#reshape an array
 
+arr = np.arange(10)
+arr.reshape(2, -1)  # Setting to -1 automatically decides the number of cols
 
+array([[0, 1, 2, 3, 4],
+       [5, 6, 7, 8, 9]])
+
+#stack two arrays vertically and horizontally
+
+import numpy as np
+
+a = np.arange(10).reshape(2,-1)
+b = np.repeat(1, 10).reshape(2,-1)
+
+# Method 1:
+np.concatenate([a, b], axis=0) #vertically
+np.concatenate([a, b], axis=1) #horizontally
+
+# Method 2:
+np.vstack([a, b])  #vertically
+np.hstake([a, b])  #horizontally
+
+# Method 3:
+np.r_[a, b]  #vertically
+mp.c_[a, b]  #horizontally
+
+#vertically
+array([[0, 1, 2, 3, 4],
+      [5, 6, 7, 8, 9],
+      [1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1]])
+
+#horizontally
+
+array([[0, 1, 2, 3, 4, 1, 1, 1, 1, 1],
+       [5, 6, 7, 8, 9, 1, 1, 1, 1, 1]])
 
 
 
