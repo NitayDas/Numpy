@@ -241,11 +241,11 @@ np.concatenate([a, b], axis=1) #horizontally
 
 # Method 2:
 np.vstack([a, b])  #vertically
-np.hstake([a, b])  #horizontally
+np.hstack([a, b])  #horizontally
 
 # Method 3:
 np.r_[a, b]  #vertically
-mp.c_[a, b]  #horizontally
+np.c_[a, b]  #horizontally
 
 #vertically
 array([[0, 1, 2, 3, 4],
