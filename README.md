@@ -307,15 +307,26 @@ NumPy provides many useful functions for mathematical operations:
 
 # Mean of an array
 mean_value = np.mean(array_1d)
-print(mean_value)
 
 # Standard deviation of an array
 std_deviation = np.std(array_1d)
-print(std_deviation)
 
 # Sum of all elements in an array
 sum_of_elements = np.sum(array_1d)
-print(sum_of_elements)
+
+#an array of cumulative sum 
+cum_array = np.cumsum(arr)
+
+#max element of an array
+max_element = np.max(array_1d)
+
+#min element of an array
+min_element = np.min(array_1d)
+
+arr = np.array([[1,2,3,4],[7,5,3,8]])
+max_columnwise = np.max(arr, axis=0) #column wise
+max_rowwise = np.max(arr, axis=1) #row wise
+
 ```
 
 
