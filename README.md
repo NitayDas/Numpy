@@ -15,20 +15,22 @@ Welcome to the NumPy Basics Project! This project is designed to help you get st
 
 ## Introduction
 
-NumPy is the fundamental package for scientific computing in Python. It provides support for arrays, matrices, and many mathematical functions.
+NumPy refers numerical python is the fundamental package for scientific computing in Python. It provides support for arrays, matrices, and many mathematical functions.
 
 ## Installation
 
 To install NumPy, you need to have Python installed on your system. You can install NumPy using pip:
 
-bash
+```bash
 pip install numpy
+```
 
 Alternatively, if you are using Anaconda, you can install NumPy using conda:
 
-bash
+```bash
 
 conda install numpy
+```
 
 ## Basic Usage
 
