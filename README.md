@@ -124,13 +124,107 @@ array([[0.4543757 , 0.89930504, 0.38307286],
 NumPy allows you to perform element-wise operations on arrays:
 
 ```python
+
 # Element-wise addition
-array_sum = array_1d + 2
+array_sum = array + 2
 print(array_sum)
 
 # Element-wise multiplication
-array_product = array_1d * 2
+array_product = array * 2
 print(array_product)
+
+#extract items that satisfy a given condition from 1D array.
+
+# using where gives the position of the array elements
+import numpy as np
+arr = np.array([1,2,3,8,8,9,5,2,4,6,4])
+element_is_four = np.where(arr==4)
+rem_zero = np.where((arr%3) == 0)
+
+#this method gives the element itself
+rem_one = arr[arr%3==0]
+
+print(rem_zero)
+print()
+print(rem_one)
+print()
+print(ans)
+
+(array([2, 5, 9], dtype=int64),)
+[3 9 6]
+(array([ 8, 10], dtype=int64),)
+
+
+#sorting
+
+import numpy as np
+arr = np.array([1,8,3,8,2,9,5,2,4,6,4])
+arr2 = np.array(['a','v','m','l','k'])
+
+print(np.sort(arr))
+print()
+print(np.sort(arr2))
+
+[1 2 2 3 4 4 5 6 8 8 9]
+['a' 'k' 'l' 'm' 'v']
+
+#searchsorted
+#it gives the count of the elemnt that are less than the given element
+
+import numpy as np
+arr = np.array([1,2,3,4,4,6,7,7,8,9])
+
+ans = np.searchsorted(arr, 5)
+group = np.searchsorted(arr, [5,2,7])
+
+print(ans)
+print()
+print(group)
+
+5
+[5 1 6]
+
+​
+#Filter using a bool array
+
+import numpy as np​
+arr = np.array(['a','v','m','l','k'])
+f=[True,False,True,True,False]
+
+filtered_array = arr[f]
+print(filtered_array)
+
+#filtered element where f has True value
+['a' 'm' 'l']
+
+#for unique element
+
+import numpy as np
+arr = np.array([1,2,3,8,8,9,5,2,4,6,4])
+unique_array= np.unique(arr)
+
+print(unique_array)
+
+[1 2 3 4 5 6 8 9]
+
+# for Resize an array
+
+import numpy as np
+arr = np.array([1,2,3,8,8,9,5,2,4,6,4,3])
+resize_array = np.resize(arr,(3,4))
+
+print(resize_array)
+
+[[1 2 3 8]
+ [8 9 5 2]
+ [4 6 4 3]]
+
+
+
+
+
+
+
 ```
 
 ## Indexing and Slicing
