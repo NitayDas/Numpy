@@ -269,12 +269,34 @@ You can access elements of a NumPy array using indexing and slicing:
 ```python
 
 # Indexing
-first_element = array_1d[0]
-print(first_element)
+
+import numpy as np
+
+arr = np.array([1,2,3,7,5,3,8,7]) #one dimensional array
+print(arr[3])
+output:7
+
+arr = np.array([[1,2,3],[7,5,3]]) #two dimensional array
+print(arr[0,2])
+output:3
+
+arr = np.array([1,2,3,7,5,3,4,2]) #three dimensional array
+ThreeD_array = arr.reshape(2,2,2)
+print(ThreeD_array[1,1,0])
+output:4
 
 # Slicing
-subset_array = array_1d[1:4]
-print(subset_array)
+
+arr = np.array([1,2,3,4,5,6,7,8])
+
+print("1 to 4:", arr[:4])
+print("2 to 6:", arr[1:6])
+print("2 to 6 with step 2:", arr[1:6:2])
+
+1 to 4: [1 2 3 4]
+2 to 6: [2 3 4 5 6]
+2 to 6 with step 2: [2 4 6]
+
 ```
 
 ## Common Functions
