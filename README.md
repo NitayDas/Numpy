@@ -10,7 +10,7 @@ Welcome to the NumPy Basics Project! This project is designed to help you get st
   - [Array Operations](#array-operations)
   - [Indexing and Slicing](#indexing-and-slicing)
   - [Common Functions](#common-functions)
-  - [View vs Copy](#view vs copy)
+  - [View vs Copy](#view-vs-copy)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -327,6 +327,8 @@ min_element = np.min(array_1d)
 arr = np.array([[1,2,3,4],[7,5,3,8]])
 max_columnwise = np.max(arr, axis=0) #column wise
 max_rowwise = np.max(arr, axis=1) #row wise
+
+```
 
 
 ## View vs Copy
