@@ -10,6 +10,7 @@ Welcome to the NumPy Basics Project! This project is designed to help you get st
   - [Array Operations](#array-operations)
   - [Indexing and Slicing](#indexing-and-slicing)
   - [Common Functions](#common-functions)
+  - [View vs Copy](#view vs copy)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -326,6 +327,55 @@ min_element = np.min(array_1d)
 arr = np.array([[1,2,3,4],[7,5,3,8]])
 max_columnwise = np.max(arr, axis=0) #column wise
 max_rowwise = np.max(arr, axis=1) #row wise
+
+
+## View vs Copy
+
+View in NumPy
+
+A view in NumPy is a new array that refers to the same data of the original array. It does not create a new copy but rather provides a different way to look at the same underlying data. This means modifications to the view will affect the original array, and vice versa.
+Example of View:
+
+```python
+
+import numpy as np
+
+# Create an original array
+arr_original = np.array([1, 2, 3, 4, 5])
+
+# Create a view of the original array
+arr_view = arr_original.view()
+
+# Modify the view
+arr_view[0] = 100
+
+# Both arrays are affected
+print("Original array:", arr_original)  # Output: [100   2   3   4   5]
+print("View array:", arr_view)          # Output: [100   2   3   4   5]
+
+```
+
+Copy in NumPy
+
+A copy in NumPy is a new array with its own separate data. Modifications to a copy do not affect the original array, and vice versa. This is useful when you need to manipulate data independently without altering the original array.
+Example of Copy:
+
+```python
+
+import numpy as np
+
+# Create an original array
+arr_original = np.array([1, 2, 3, 4, 5])
+
+# Create a copy of the original array
+arr_copy = arr_original.copy()
+
+# Modify the copy
+arr_copy[0] = 100
+
+# Original array remains unchanged
+print("Original array:", arr_original)  # Output: [1 2 3 4 5]
+print("Copied array:", arr_copy)         # Output: [100   2   3   4   5]
 
 ```
 
